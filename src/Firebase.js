@@ -2,15 +2,15 @@ import firebase from "firebase";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAaoGJkoUFNjxPwP4H0horZHowV-p_LiPo",
-  authDomain: "ig-reels-277b1.firebaseapp.com",
-  // databaseURL: "https://ig-reels-ea107.firebaseio.com",
-  projectId: "ig-reels-277b1",
-  storageBucket: "ig-reels-277b1.appspot.com",
-  messagingSenderId: "346276809632",
-  appId: "1:346276809632:web:c408b11a972953688a32c5",
-  measurementId: "G-T8FNNPMBCY"
+  apiKey: "AIzaSyCjBKhSYFKejJbKlUTPQ8uhE5XmtMAWNbw",
+  authDomain: "instagram-reel-clone-96435.firebaseapp.com",
+  projectId: "instagram-reel-clone-96435",
+  storageBucket: "instagram-reel-clone-96435.appspot.com",
+  messagingSenderId: "346545147163",
+  appId: "1:346545147163:web:2fddd2b9952049bb0d17be",
+  measurementId: "G-FXFKHBDDZQ"
 };
 
 //   to connect to database i.e. firebase- we use below lines of code
