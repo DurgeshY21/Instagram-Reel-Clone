@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import VideoCard from './VideoCard';
-import video from "./assests/video1.mp4";
 import db from './Firebase';
 
 function App() {
@@ -13,10 +12,9 @@ function App() {
     db.collection('reels').onSnapshot(snapshot => (
         // snapshot.docs returns an array and .map() allows you to loop throught this
       setReels(snapshot.docs.map(doc => doc.data()))
-      
-    
     ))
   },[])
+
 
   return (
     // BEM naming convention
@@ -38,12 +36,12 @@ function App() {
       {/* then we have -container with ig videos or reel-scrollable container */}
        {reels.map(({channel, avatarSrc, url, likes, shares, song}) => ( 
           <VideoCard
-         channel="Mansi"
-         avatarSrc="https://randomuser.me/api/portraits/women/75.jpg"
-         song="Libianca- People"
-         url={video}
-         likes={950}
-         shares={80}
+          channel={channel}
+          avatarSrc={avatarSrc}
+          song={song}
+          url={url}
+          likes={likes}
+          shares={shares}
         /> 
       
        ))}   
